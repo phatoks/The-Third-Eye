@@ -1,0 +1,36 @@
+.start-screen {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+  margin-left:10px !important;
+  padding-bottom: 2px;
+  
+}
+.start-screen-title {
+  position: fixed;
+  top: 20px;
+  left: 80px;
+  display: none;
+}
+[class*=tile-] {
+  transform: scale(0.8);
+}
+.tiles-group {
+  margin-left: 10px !important;
+  margin-top: 10px;
+}
+ .start-screen {
+    padding: 0px 10px 10px 10px !important;
+  }
+@media all and (min-width: 768px) {
+  .start-screen-title {
+    display: block;
+  }
+  .start-screen {
+  .tiles-group {
+    left: 100px;
+  }
+  .tiles-group {
+    margin-left: 100px;
+  }
+}
