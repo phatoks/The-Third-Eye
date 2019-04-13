@@ -195,17 +195,7 @@ void loop() {
     Serial.println(F("Failed to read from DHT sensor!"));
     return;
   }
-/*
- Serial.print(F("Humidity: "));
-  Serial.print(h);
-  Serial.print(F("%  Temperature: "));
-  Serial.print(t);
-  Serial.print(F("°C "));
-  Serial.print(f);
-  Serial.println("");
-  Serial.print("Flame :");
 
-*/
 // (note: line 1 is the second row, since counting begins with 0):
   lcd.setCursor(0, 1);
   lcd.print(temperaturePostValue);
@@ -215,11 +205,7 @@ void loop() {
    lcd.setCursor(8,1);
   lcd.print(humidityPostValue);
    lcd.print("%");  
-  //lcd.setCursor(10,1);
-  //lcd.print("      ");
-   //lcd.setCursor(10,1);
-  //lcd.print(flameValue); 
-   // check if the pushbutton is pressed. If so, set the snooze status to True
+  
 
  // Clears the trigPin
 digitalWrite(trigPin, LOW);
@@ -292,11 +278,5 @@ void triggerAlarm()
 {
   
   digitalWrite(piezoPin,HIGH);
-  /*
-  // Turn ON the buzzer.Three notes are used in regular interval for smooth tone.
-      tone(piezoPin, 400, 500); //the buzzer emit sound at 400 MHz for 500 millis
-      delay(100); //wait 500 millis
-      tone(piezoPin, 650, 500); //the buzzer emit sound at 650 MHz for 500 millis
-      delay(100); //wait 500 millis 
-      */
+
   }
