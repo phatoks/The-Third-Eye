@@ -1,5 +1,5 @@
 # The-Third-Eye - A Home Monitoring System
-The project Third-Eye is an Arduino based smart home monitoring system. Its designed as an academic project for Interactive Hardware-CS807. For the project purpose we used components that were relatively cheap and readily available in our arduino kit. The system can monitor Temperature, Humidity, detect light, motion and fire. All these sensored data are collected and sent to a remote server where anyone from anywhere can monitor sensor activities through a web page or a mobile application.
+The project Third-Eye is an Arduino based smart home monitoring system. It is designed as an academic project for Interactive Hardware-CS807. For the project purpose we used components that were relatively cheap and readily available in our arduino kit. The system can monitor Temperature, Humidity, detect light, motion and fire. All these sensored data are collected and sent to a remote server where anyone from anywhere can monitor sensor activities through a web page or a mobile application.
 
 ## Key Features
  1. Measure room temprature.
