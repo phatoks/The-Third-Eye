@@ -29,6 +29,7 @@ The following components were used in our project
  11. One Web Server
  12. Mobile App and Web Page
 
+![Components](img/COMPONENTS.jpg)
 ## 
 
 ## Scematics & Design Diagram
