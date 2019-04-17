@@ -16,7 +16,7 @@ The project Third-Eye is an Arduino based smart home monitoring system. It is de
 
 The following components were used in our project
 ------------ | -------------
- 1.  One DHT 11 Sensor
+  1.  One DHT 11 Sensor
  2.  One Photoresistor
  3.  One IR Flame Detector
  4.  One Ultrasonic Range Finder
@@ -30,6 +30,7 @@ The following components were used in our project
  12. Mobile App and Web Page
 |
 ![Components](img/COMPONENTS.jpg)
+
 ## 
 
 ## Scematics & Design Diagram
