@@ -25,6 +25,40 @@ The following components were used in our project
 ## 
 
 ## Scematics & Design Diagram
+Connecting all these components is tedious work. We believe it will be very difficult to follow if all of them are placed in one schematic diagram. For ease of implementation, we add individual component connection in breadboard view.
+
+Bellow diagram shows the connection of DHT11 sensor :
+
+![DHT11 Connection](img/DHT_connection_bb.png)
+
+For Photoresistor :
+
+![Photoresistor Connection](img/LDR_connection_bb.png)
+
+For IR Flame detector:
+
+![Flame Detector Connection](img/FLAME_connection_bb.png)
+
+For Ultrasonic Range Finder:
+
+![Ultrasonic sensor Connection](img/MOTION_connection_bb.png)
+
+For WiFi Shield:
+
+![WiFi shield Connection](img/WIFI_connection_bb.png)
+
+
+For LCD Panel:
+
+![LCD Panel Connection](img/LCD_connection_bb.png)
+
+For Piezo Buzzer :
+
+![Piezo Buzzer Connection](img/PIEZO_connection_bb.png)
+
+For Button :
+
+![Slider Button Connection](img/BUTTON_connection_bb.png)
 
 ## Mobile and Web view 
 # Mobile view
