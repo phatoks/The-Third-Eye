@@ -63,21 +63,23 @@ For Button :
 For Arduino Sketch:
 
 To work with own server and wifi hotspot, some parameters need to be changed. In src/ThirdEye.ino file please change the following 
-
+<pre>
 String AP = "SSID";       
 String PASS = "PASSWORD"; 
 String HOST = "SERVER BASE URL";
 String PORT = "80";
-
+</pre>
 ## Mobile and Web view
 
 For a demonstration of this project, we used freely available hosting cloud provided by 000webhost.com. To set up a free personal web serverplease visit 000webhost.com. Once server creation is done which is very easy, we uploaded the server script and MySql database. If you already have any domain and hosting, you can use that. However, you need to change some parameters in different files.
 
 At first you need to create a MySql Database in web server cpanel. When database is ready, you can upload the sql file to create the data tables required.
-File is located in ######  src/database/ThirdEye.sql   
+File is located in 
+######  src/database/ThirdEye.sql   
 
 Some additional changes are also required.
-Please change the following in ###### src/webserver/library/databaseConfig.php file.
+Please change the following in 
+###### src/webserver/library/databaseConfig.php file.
 <pre>
 DB::$host='localhost'; // change if required
 DB::$user = 'DATABASE_USERNAME';
@@ -85,7 +87,8 @@ DB::$password = 'DATABASE_PASSWORD';
 DB::$dbName = 'DATABASE_NAME';
 </pre>
 
-Please change the following in ###### src/mobileapp/ThirdEye/app/src/main/java/com/smarthome/MainActivity.java file.
+Please change the following in 
+###### src/mobileapp/ThirdEye/app/src/main/java/com/smarthome/MainActivity.java file.
 <pre>
 String URL = "HOSTING_SERVER_BASE_URL";
 </pre>
