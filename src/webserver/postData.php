@@ -1,9 +1,7 @@
 <?php
 require_once 'library/meekrodb.2.3.class.php';
-DB::$host='localhost';
-DB::$user = 'id9192689_smarthome';
-DB::$password = 'smarthome';
-DB::$dbName = 'id9192689_smarthome';
+require_once 'library/databaseConfig.php';
+
 extract($_REQUEST);
 $intensity = ($l==1)?"ON":"OFF";
 $flame=($f==1)?"ON":"OFF";

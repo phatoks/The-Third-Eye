@@ -82,7 +82,7 @@ void postToServer()
    getData=getData+"&l=" + (String)lightPostValue + "&f=" + (String)flamePostValue ; 
    getData=getData+"&a=" + (String)alarmPostValue + "&m=" + (String)motionPostValue + "&h=" + (String)humidityPostValue;   
    getData=getData+" HTTP/1.1\r\n";   
-   getData=getData+"Host: 3217.000webhostapp.com\r\n";  
+   getData=getData+"Host: " + HOST + "\r\n";  
 
 sendCommand("AT+CIPMUX=1",2,"OK");
 // printResponse();  
@@ -94,7 +94,8 @@ sendCommand("AT+CIPMUX=1",2,"OK");
    getData=getData+"&l=" + (String)lightPostValue + "&f=" + (String)flamePostValue ; 
    getData=getData+"&a=" + (String)alarmPostValue + "&m=" + (String)motionPostValue + "&h=" + (String)humidityPostValue;   
    getData=getData+" HTTP/1.1\r\n";   
-   getData=getData+"Host: 3217.000webhostapp.com\r\n";    
+   getData=getData+"Host: " + HOST + "\r\n";  
+   
  esp8266.println(getData);
  //printResponse();
  countTrueCommand++;
