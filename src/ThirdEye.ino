@@ -1,10 +1,13 @@
+/*
+  Acedmic Project : The THirdEye: A Smart Home Monitoring System
+  created 2019
+  by A K M Nazmul Hasan
+ */
 #include <DHT.h>
 #include <LiquidCrystal.h>
 #include <SoftwareSerial.h>
-
 #define RX 2
 #define TX 3
-
 String AP = "NAZMUL";       // CHANGE ME
 String PASS = "3068073675"; // CHANGE ME
 String HOST = "3217.000webhostapp.com";
@@ -92,7 +95,8 @@ sendCommand("AT+CIPMUX=1",2,"OK");
  sendCommand("AT+CIPSEND=0," +String(getData.length()+4),6,">"); 
  getData= "GET /postData.php?t="+ (String)temperaturePostValue; 
    getData=getData+"&l=" + (String)lightPostValue + "&f=" + (String)flamePostValue ; 
-   getData=getData+"&a=" + (String)alarmPostValue + "&m=" + (String)motionPostValue + "&h=" + (String)humidityPostValue;   
+   getData=getData+"&a=" + (String)alarmPostValue + "&m=" + 
+   (String)motionPostValue + "&h=" + (String)humidityPostValue;   
    getData=getData+" HTTP/1.1\r\n";   
    getData=getData+"Host: " + HOST + "\r\n";  
    
