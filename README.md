@@ -24,8 +24,8 @@ The following components were used in our project
 
 ## 
 
-## Scematics & Design Diagram
-Connecting all these components is tedious work. We believe it will be very difficult to follow if all of them are placed in one schematic diagram. For ease of implementation, we add individual component connection in breadboard view.
+## Schematics & Design Diagram
+For ease of implementation, we highlight individual component and its connection with Arduino.
 
 Bellow diagram shows the connection of DHT11 sensor :
 
